@@ -22,7 +22,7 @@ export default function Navigation({ siteName = "GocJoki" }: NavigationProps) {
           <div className="flex items-center space-x-3">
             <div className="w-8 h-8 rounded-lg overflow-hidden">
               <Image
-                src="/favicon.jpg" 
+                src="/gocLogo.png" 
                 alt="Logo"
                 width={32}
                 height={32}
