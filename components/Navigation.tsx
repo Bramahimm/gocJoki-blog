@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 interface NavigationProps {
   siteName?: string;
@@ -19,8 +20,14 @@ export default function Navigation({ siteName = "GocJoki" }: NavigationProps) {
         <div className="flex justify-between items-center h-16">
           {/* Brand */}
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">J</span>
+            <div className="w-8 h-8 rounded-lg overflow-hidden">
+              <Image
+                src="/favicon.jpg" 
+                alt="Logo"
+                width={32}
+                height={32}
+                className="object-cover"
+              />
             </div>
             <span className="text-white font-semibold text-xl">{siteName}</span>
           </div>

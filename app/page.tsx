@@ -119,15 +119,15 @@ export default function HomePage() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-dark-800/50 backdrop-blur-sm rounded-xl p-6 border border-dark-700">
                 <h3 className="text-lg font-semibold text-white mb-2">Website Toko</h3>
-                <p className="text-gray-400">E-commerce modern dengan integrasi pembayaran.</p>
+                <p className="text-gray-400">Masih dalam proses pengembangan😃.</p>
               </div>
               <div className="bg-dark-800/50 backdrop-blur-sm rounded-xl p-6 border border-dark-700">
                 <h3 className="text-lg font-semibold text-white mb-2">Aplikasi Mobile</h3>
-                <p className="text-gray-400">App ringan untuk pemesanan layanan.</p>
+                <p className="text-gray-400">Masih dalam proses pengembangan😃</p>
               </div>
               <div className="bg-dark-800/50 backdrop-blur-sm rounded-xl p-6 border border-dark-700">
                 <h3 className="text-lg font-semibold text-white mb-2">Template Presentasi</h3>
-                <p className="text-gray-400">Slide deck premium siap pakai.</p>
+                <p className="text-gray-400">Masih dalam proses pengembangan😃</p>
               </div>
             </div>
           </div>
