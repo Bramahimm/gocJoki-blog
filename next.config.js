@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  // Mode ketat React untuk membantu debugging
+  reactStrictMode: true,
+
+  // Konfigurasi domain gambar yang diizinkan
   images: {
-    domains: ['localhost'],
+    domains: ['localhost'], // Tambah domain lain jika perlu
+    formats: ['image/avif', 'image/webp'], // Optimasi format gambar
   },
 }
 

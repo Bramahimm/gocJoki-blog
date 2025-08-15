@@ -1,7 +1,7 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Button from '@/components/Button'
-import { Zap, Target, Puzzle, Code, Globe, Smartphone, GraduationCap, Type } from 'lucide-react'
+import { Zap, Target, Puzzle} from 'lucide-react'
 
 
 export default function HomePage() {

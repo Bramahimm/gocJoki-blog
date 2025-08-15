@@ -180,7 +180,7 @@ export default function OrderPage() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  placeholder="62xxxxxxxxxx"
+                  placeholder="+62"
                   className="w-full bg-dark-800 border border-dark-600 rounded-lg px-4 py-3 text-white focus:border-primary-500 focus:outline-none"
                 />
               </div>
@@ -194,7 +194,7 @@ export default function OrderPage() {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="email@domain.com"
+                  placeholder="joki123@gmail.com"
                   className="w-full bg-dark-800 border border-dark-600 rounded-lg px-4 py-3 text-white focus:border-primary-500 focus:outline-none"
                 />
               </div>
