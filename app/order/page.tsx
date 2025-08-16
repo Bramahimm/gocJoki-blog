@@ -61,10 +61,6 @@ export default function OrderPage() {
       newErrors.push('Format nomor WhatsApp tidak valid')
     }
     
-    if (formData.attachment && formData.attachment.size > 5 * 1024 * 1024) {
-      newErrors.push('Ukuran file maksimal 5MB')
-    }
-    
     setErrors(newErrors)
     return newErrors.length === 0
   }
@@ -84,6 +80,24 @@ export default function OrderPage() {
       setOrderCode(code)
       setSuccess(true)
       setErrors([])
+
+      // Buat pesan otomatis ke WhatsApp admin
+      const message = `
+*Halo Admin*, saya ingin melakukan pemesanan:
+
+*Kode Order:* ${code}
+*Jenis Pesanan:* ${formData.orderType === 'service' ? 'Jasa' : 'Template'}
+*Nama:* ${formData.customerName}
+*WhatsApp:* ${formData.phone || '-'}
+*Email:* ${formData.email || '-'}
+*Detail Pesanan:* ${formData.notes || '-'}
+*Preferensi Komunikasi:* ${formData.preferred.toUpperCase()}
+
+Terima kasih.
+      `
+
+      const waUrl = `https://wa.me/6281270934893?text=${encodeURIComponent(message)}`
+      window.open(waUrl, '_blank')
       
       // Reset form
       setFormData({
@@ -101,12 +115,6 @@ export default function OrderPage() {
     }
   }
 
-  const openWhatsApp = () => {
-    const message = `Halo Admin, saya barusan membuat pesanan dengan kode: ${orderCode}`
-    const waUrl = `https://wa.me/081270934893?text=${encodeURIComponent(message)}`
-    window.open(waUrl, '_blank')
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-dark-900 via-dark-800 to-dark-700">
       <Navigation />
@@ -118,11 +126,8 @@ export default function OrderPage() {
           {success && (
             <div className="bg-green-500/20 border border-green-500/50 rounded-xl p-6 mb-8 text-center">
               <p className="text-green-400 mb-4">
-                Pesanan berhasil dikirim. Kode Order: <strong className="text-white">{orderCode}</strong>
+                Pesanan berhasil diproses. Kode Order: <strong className="text-white">{orderCode}</strong>
               </p>
-              <Button onClick={openWhatsApp}>
-                Chat Admin
-              </Button>
             </div>
           )}
 
