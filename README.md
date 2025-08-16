@@ -1,6 +1,6 @@
 #  - Next.js & TypeScript
 
- modern web application for JokiGoC, a professional service platform offering IT services, academic assistance, and premium templates. Built with Next.js 14, TypeScript, and Tailwind CSS.
+  web application for JokiGoC, a professional service platform offering IT services, academic assistance, and premium templates. Built with Next.js 14, TypeScript, and Tailwind CSS.
 
 ## 🚀 Features
 
