@@ -15,6 +15,7 @@ interface Template {
   rating: number
   downloads: number
   image: string
+  gif: string // ⬅ tambahkan optional gif
   tags: string[]
 }
 
@@ -28,17 +29,19 @@ const mockTemplates: Template[] = [
     rating: 4.8,
     downloads: 1250,
     image: '/api/placeholder/400/300',
+    gif:'/gif/kasir.gif',
     tags: ['HTML', 'CSS', 'JavaScript', 'Responsive']
   },
   {
     id: 2,
-    name: 'Dashboard Admin Pro',
-    description: 'Dashboard admin lengkap dengan fitur CRUD dan grafik',
-    category: 'Dashboard',
+    name: 'Website kasir',
+    description: 'Website Kasir Toko lengkap dengan fitur CRUD dan grafik',
+    category: 'Website kasir',
     price: 250000,
     rating: 4.9,
     downloads: 890,
     image: '/api/placeholder/400/300',
+    gif:'gif/kasir.gif',
     tags: ['React', 'TypeScript', 'Tailwind', 'Chart.js']
   },
   {
@@ -50,6 +53,7 @@ const mockTemplates: Template[] = [
     rating: 4.7,
     downloads: 650,
     image: '/api/placeholder/400/300',
+    gif:'../public/gif//kasir.gif',
     tags: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe']
   },
   {
@@ -61,6 +65,7 @@ const mockTemplates: Template[] = [
     rating: 4.6,
     downloads: 420,
     image: '/api/placeholder/400/300',
+    gif:'../public/gif//kasir.gif',
     tags: ['Figma', 'Sketch', 'Adobe XD', 'iOS/Android']
   },
   {
@@ -72,6 +77,7 @@ const mockTemplates: Template[] = [
     rating: 4.5,
     downloads: 780,
     image: '/api/placeholder/400/300',
+    gif:'gif/kasir.gif',
     tags: ['HTML5', 'CSS3', 'GSAP', 'Parallax']
   },
   {
@@ -83,11 +89,12 @@ const mockTemplates: Template[] = [
     rating: 4.4,
     downloads: 320,
     image: '/api/placeholder/400/300',
+    gif:'../public/gif//kasir.gif',
     tags: ['WordPress', 'PHP', 'MySQL', 'SEO']
   }
 ]
 
-const categories = ['Semua', 'Website', 'Dashboard', 'E-commerce', 'Mobile', 'Portfolio', 'Blog']
+const categories = ['Semua', 'Website', 'Website kasir', 'E-commerce', 'Mobile', 'Portfolio', 'Blog']
 
 export default function TemplatesPage() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -188,15 +195,23 @@ export default function TemplatesPage() {
           {/* Templates Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredTemplates.map((template) => (
-              <div key={template.id} className="bg-dark-800/50 backdrop-blur-sm rounded-xl border border-dark-700 hover:border-primary-500/50 transition-all duration-300 hover:transform hover:scale-105">
+              <div key={template.id} className="group bg-dark-800/50 backdrop-blur-sm rounded-xl border border-dark-700 hover:border-primary-500/50 transition-all duration-300 hover:transform hover:scale-105">
                 {/* Template Image */}
-                <div className="relative">
-                  <div className="w-full h-48 bg-dark-700 rounded-t-xl flex items-center justify-center">
-                    <div className="text-gray-400 text-center">
-                      <div className="w-16 h-16 bg-dark-600 rounded-lg mx-auto mb-2"></div>
-                      <p className="text-sm">Preview Image</p>
-                    </div>
-                  </div>
+                <div className="relative w-full h-48 bg-dark-700 rounded-t-xl overflow-hidden">
+                  {/* Tampilkan GIF langsung jika kategori Website kasir, selain itu tampilkan image */}
+                  {template.category === 'Website kasir' && template.gif ? (
+                    <img
+                      src={template.gif}
+                      alt={`${template.name} preview`}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  ) : (
+                    <img
+                      src={template.image}
+                      alt={template.name}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  )}
                   <div className="absolute top-3 right-3">
                     <span className="bg-primary-500 text-white text-xs font-medium px-2 py-1 rounded-full">
                       {template.category}
