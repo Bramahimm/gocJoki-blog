@@ -158,7 +158,7 @@ export default function AdminDashboard() {
                   : 'text-gray-400 hover:text-white'
                 }`}
             >
-              Pesanan
+              Pesana
             </button>
             <button
               onClick={() => setActiveTab('templates')}
