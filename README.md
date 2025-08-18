@@ -1,4 +1,4 @@
-# GocJoki - Next.js & TypeScript
+# GocJoki's-Blog - Next.js & TypeScript
 
   A web application for JokiGoC, a professional service platform offering IT services, academic assistance, and premium templates. Built with Next.js 14, TypeScript, and Tailwind CSS.
 
