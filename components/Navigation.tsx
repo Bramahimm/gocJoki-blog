@@ -9,7 +9,7 @@ interface NavigationProps {
   siteName?: string;
 }
 
-export default function Navigation({ siteName = "GocJoki" }: NavigationProps) {
+export default function Navigation({ siteName = "Goc Joki" }: NavigationProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -22,7 +22,7 @@ export default function Navigation({ siteName = "GocJoki" }: NavigationProps) {
           <div className="flex items-center space-x-3">
             <div className="w-8 h-8 rounded-lg overflow-hidden">
               <Image
-                src="/gocLogo.png" 
+                src="/gocLogo.png"
                 alt="Logo"
                 width={32}
                 height={32}
@@ -58,6 +58,11 @@ export default function Navigation({ siteName = "GocJoki" }: NavigationProps) {
               href="/contact"
               className="text-gray-300 hover:text-white transition-colors">
               Kontak
+            </Link>
+            <Link
+              href="/contact"
+              className="text-gray-300 hover:text-white transition-colors">
+              About Goc
             </Link>
           </div>
 
@@ -104,6 +109,12 @@ export default function Navigation({ siteName = "GocJoki" }: NavigationProps) {
                 className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
                 onClick={() => setIsMenuOpen(false)}>
                 Kontak
+              </Link>
+              <Link
+                href="/contact"
+                className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
+                onClick={() => setIsMenuOpen(false)}>
+                About Goc
               </Link>
             </div>
           </div>
