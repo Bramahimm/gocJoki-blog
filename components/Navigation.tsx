@@ -37,7 +37,7 @@ export default function Navigation({ siteName = "GocJoki" }: NavigationProps) {
             <Link
               href="/#jasa"
               className="text-gray-300 hover:text-white transition-colors">
-              jasa
+              Jasa
             </Link>
             <Link
               href="/#templates"
