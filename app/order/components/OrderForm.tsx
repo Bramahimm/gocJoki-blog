@@ -37,7 +37,7 @@ export default function OrderForm() {
             onChange={handleInputChange}
             className="w-full bg-dark-800 border border-dark-600 rounded-lg px-4 py-3 text-white"
             required>
-            <option value="service">Jasa (IT / Non-IT)</option>
+            <option value="service">Jasa (IT / non-IT)</option>
             <option value="template">Template</option>
           </select>
         </div>
@@ -53,6 +53,7 @@ export default function OrderForm() {
             type="text"
             id="customerName"
             name="customerName"
+            placeholder="Masukkannama"
             value={formData.customerName}
             onChange={handleInputChange}
             className="w-full bg-dark-800 border border-dark-600 rounded-lg px-4 py-3 text-white"
@@ -74,7 +75,7 @@ export default function OrderForm() {
               name="phone"
               value={formData.phone}
               onChange={handleInputChange}
-              placeholder="+62"
+              placeholder="+6281234567"
               className="w-full bg-dark-800 border border-dark-600 rounded-lg px-4 py-3 text-white"
             />
           </div>
@@ -109,7 +110,7 @@ export default function OrderForm() {
             rows={5}
             value={formData.notes}
             onChange={handleInputChange}
-            placeholder="Jelaskan kebutuhan Anda..."
+            placeholder="Jelaskan Detail Pesanan"
             className="w-full bg-dark-800 border border-dark-600 rounded-lg px-4 py-3 text-white resize-none"
           />
         </div>

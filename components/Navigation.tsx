@@ -60,7 +60,7 @@ export default function Navigation({ siteName = "Goc Joki" }: NavigationProps) {
               Kontak
             </Link>
             <Link
-              href="/contact"
+              href="/about"
               className="text-gray-300 hover:text-white transition-colors">
               About Goc
             </Link>
