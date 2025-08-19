@@ -1,13 +1,10 @@
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import Button from "@/components/Button";
 import { Zap, Target, Puzzle } from "lucide-react";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-dark-900 via-dark-800 to-dark-700">
-      <Navigation />
       <Analytics />
 
       <main>
@@ -208,8 +205,6 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }
