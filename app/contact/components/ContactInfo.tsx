@@ -2,7 +2,7 @@
 
 import Button from "@/components/Button";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { useContactForm } from "./hooks/useContactForm";
+import { useContactForm } from "../hooks/useContactForm";
 
 export default function ContactInfo() {
   const { openWhatsApp } = useContactForm();
