@@ -3,6 +3,7 @@
 import { Eye, Download, Star } from "lucide-react";
 import Button from "@/components/Button";
 import { Template } from "../types/template";
+import Image from "next/image";
 
 interface Props {
   template: Template;
@@ -13,11 +14,15 @@ export default function TemplateCard({ template, formatPrice }: Props) {
   return (
     <div className="bg-dark-800/50 backdrop-blur-sm rounded-xl border border-dark-700 hover:border-primary-500/50 transition-all duration-300 hover:transform hover:scale-105">
       <div className="relative">
-        <div className="w-full h-48 bg-dark-700 rounded-t-xl flex items-center justify-center">
-          <div className="text-gray-400 text-center">
-            <div className="w-16 h-16 bg-dark-600 rounded-lg mx-auto mb-2"></div>
-            <p className="text-sm">Preview Image</p>
-          </div>
+        <div className="w-full h-48 bg-dark-700 rounded-t-xl overflow-hidden relative">
+          <Image
+            src={template.image.startsWith("/api/placeholder") ? "/gocLogo.png" : template.image}
+            alt={template.name}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover"
+            priority={template.id === 1}
+          />
         </div>
         <div className="absolute top-3 right-3">
           <span className="bg-primary-500 text-white text-xs font-medium px-2 py-1 rounded-full">
