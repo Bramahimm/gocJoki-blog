@@ -35,17 +35,17 @@ export default function Navigation({ siteName = "Goc Joki" }: NavigationProps) {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
-              href="/#jasa"
+              href="/#templates"
               className="text-gray-300 hover:text-white transition-colors">
               Jasa
             </Link>
             <Link
-              href="/#templates"
+              href="/templates"
               className="text-gray-300 hover:text-white transition-colors">
               Template
             </Link>
             <Link
-              href="/#portofolio"
+              href="/portofolio"
               className="text-gray-300 hover:text-white transition-colors">
               Portofolio
             </Link>

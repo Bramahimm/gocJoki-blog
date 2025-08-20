@@ -18,7 +18,7 @@ const services = [
     title: "Pembuatan Template",
     description:
       "Website, desain, hingga dokumen siap pakai untuk kebutuhan instan.",
-    link: "/#templates",
+    link: "/templates",
   },
 ];
 
