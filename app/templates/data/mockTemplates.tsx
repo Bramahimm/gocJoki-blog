@@ -9,7 +9,7 @@ export const mockTemplates: Template[] = [
     price: 150000,
     rating: 4.8,
     downloads: 1250,
-    image: "/api/placeholder/400/300",
+    image: "/kasir.png",
     tags: ["HTML", "CSS", "JavaScript", "Responsive"],
   },
   {
