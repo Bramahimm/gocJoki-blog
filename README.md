@@ -120,10 +120,7 @@ jokigoc-nextjs/
 - Download tracking
 
 ### Admin Dashboard
-- Business statistics
-- Order management
-- Template management
-- Responsive data tables
+- Coming soon
 
 ## 🎨 Styling
 
