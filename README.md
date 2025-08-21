@@ -187,8 +187,8 @@ This project is licensed under the MIT License.
 ## 📞 Support
 
 For support and questions:
-- WhatsApp: 081270934893
-- Email: admin@jokigoc.com
+- WhatsApp: +62 887-0656-0821
+- Email: bramahimsa123@gmail.com
 
 ## 🔄 Migration from PHP
 
