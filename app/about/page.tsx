@@ -11,8 +11,14 @@ export default function AboutPage() {
               Tentang JokiGoC
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Platform terpercaya untuk jasa joki tugas dan template berkualitas
-              tinggi
+              Di sini, kami percaya kalau setiap orang butuh “teman backup” buat
+              ngatasin tugas atau cari template kece yang bisa langsung
+              dipakai.Makanya, kami hadir sebagai platform terpercaya buat
+              ngebantu kamu ngerjain tugas biar lebih gampang, cepat, dan
+              pastinya rapi.zSelain itu, kami juga nyediain template berkualitas
+              tinggi yang bisa bikin kerjaan kamu lebih praktis dan anti ribet.
+              Jadi, kamu bisa fokus ke hal-hal lain yang lebih penting sementara
+              sisanya biar kami yang handle 😉.
             </p>
           </div>
 
