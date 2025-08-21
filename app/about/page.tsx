@@ -1,9 +1,9 @@
-import Header from "./Header";
-import MissionVision from "./MissionVision";
-import Values from "./ValuesGoc";
-import Team from "./TeamGoc";
-import Stats from "./StatsGoc";
-import CTA from "./CTA";
+import Header from "./components/Header";
+import MissionVision from "./components/MissionVision";
+import Values from "./components/ValuesGoc";
+import Team from "./components/TeamGoc";
+import Stats from "./components/StatsGoc";
+import CTA from "./components/CTA";
 
 export default function AboutPage() {
   return (
