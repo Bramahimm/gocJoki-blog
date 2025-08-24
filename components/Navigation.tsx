@@ -111,7 +111,7 @@ export default function Navigation({ siteName = "Goc Joki" }: NavigationProps) {
                 Kontak
               </Link>
               <Link
-                href="/contact"
+                href="/about"
                 className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
                 onClick={() => setIsMenuOpen(false)}>
                 About Goc
