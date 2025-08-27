@@ -3,21 +3,57 @@ import Button from "@/components/Button";
 
 const services = [
   {
-    title: "Jasa Joki Tugas IT",
+    title: "Pembuatan Website Portfolio",
     description:
-      "Dari coding, debugging, hingga laporan — kami kerjakan dengan standar tinggi.",
+      "Buat website portfolio profesional untuk menampilkan karya, CV, dan profil Anda secara elegan.",
     link: "/order",
   },
   {
-    title: "Jasa Joki Non-IT",
+    title: "Pembuatan Undangan Online",
     description:
-      "Tugas umum, presentasi, atau dokumen — selesai dengan rapi dan cepat.",
+      "Undangan digital interaktif dengan desain menarik, bisa dibagikan lewat link atau QR code.",
+    link: "/templates",
+  },
+  {
+    title: "Pembuatan PPT Presentasi",
+    description:
+      "Presentasi yang informatif dengan desain visual modern, cocok untuk kuliah, kerja, maupun seminar.",
+    link: "/templates",
+  },
+  {
+    title: "Pembuatan Tugas Umum",
+    description:
+      "Bantuan pengerjaan tugas sekolah atau kuliah dengan hasil rapi, cepat, dan sesuai kebutuhan.",
+    link: "/templates",
+  },
+  {
+    title: "Pembuatan Laporan Kuliah",
+    description:
+      "Laporan praktikum, penelitian, atau proyek kuliah dikerjakan dengan format akademik yang benar.",
     link: "/order",
   },
   {
-    title: "Pembuatan Template",
+    title: "Pembuatan Template CV Ats",
     description:
-      "Website, desain, hingga dokumen siap pakai untuk kebutuhan instan.",
+      "Desain CV ramah ATS (Applicant Tracking System) agar mudah terbaca oleh HR dan lolos screening.",
+    link: "/templates",
+  },
+  {
+    title: "Pembuatan Makalah",
+    description:
+      "Makalah ilmiah dengan struktur teratur, referensi sesuai, dan penulisan yang rapi.",
+    link: "/templates",
+  },
+  {
+    title: "Pembuatan Jurnal",
+    description:
+      "Jurnal akademik sesuai kaidah penulisan ilmiah, lengkap dengan sitasi dan daftar pustaka.",
+    link: "/templates",
+  },
+  {
+    title: "Pembuatan Poster",
+    description:
+      "Poster informatif dan estetis untuk acara, promosi, maupun presentasi dengan desain profesional.",
     link: "/templates",
   },
 ];
