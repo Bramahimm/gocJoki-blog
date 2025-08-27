@@ -67,7 +67,7 @@ export default function Services() {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="bg-dark-800 rounded-2xl shadow-lg p-6 hover:scale-105 transition-transform">
+              className="bg-dark-800 rounded-2xl shadow-lg cursor-pointer p-6 hover:scale-105 transition-transform">
               <h3 className="text-xl font-semibold text-white mb-2">
                 {service.title}
               </h3>

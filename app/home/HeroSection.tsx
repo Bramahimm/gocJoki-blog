@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 export default function HeroSection() {
   return (
     <section className="relative py-20 px-4 sm:px-6 lg:px-8">
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-purple-600/20 rounded-full blur-3xl"></div>
+      <div className="absolute inset-20 bg-gradient-to-tl from-primary-600/20 to-purple-600/20 rounded-full blur-3xl"></div>
       <div className="relative max-w-7xl mx-auto text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
           Solusi Cepat Joki & Template Profesional
