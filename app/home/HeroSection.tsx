@@ -9,7 +9,7 @@ export default function HeroSection() {
           Solusi Cepat Joki & Template Profesional
         </h1> 
         <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto animate-slide-up">
-          Butuh proyek IT, tugas Non-IT, atau template siap pakai? Kami bantu
+          Butuh proyek Aplikasi, tugas , atau template siap pakai? Kami bantu
           dari ide sampai jadi, dengan kualitas profesional dan proses cepat.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slide-up">
