@@ -64,6 +64,11 @@ export default function Navigation({ siteName = "Goc Joki" }: NavigationProps) {
               className="text-gray-300 hover:text-white transition-colors">
               About Goc
             </Link>
+            <Link
+              href="#"
+              className="text-red-300 hover:text-white transition-colors">
+              Login
+            </Link>
           </div>
 
           {/* Mobile menu button */}
