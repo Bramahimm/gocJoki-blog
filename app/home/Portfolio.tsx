@@ -7,7 +7,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+    <section id="portfolio" className="relative py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-white text-center mb-12">
           Portofolio

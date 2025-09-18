@@ -15,6 +15,7 @@ export default function HomePage() {
         <Features />
         <Services />
         <TemplatesHighlight />
+        <Portfolio />
       </main>
     </div>
   );

@@ -45,7 +45,7 @@ export default function Navigation({ siteName = "Goc Joki" }: NavigationProps) {
               Template
             </Link>
             <Link
-              href="/portofolio"
+              href="/#portfolio"
               className="text-gray-300 hover:text-white transition-colors">
               Portofolio
             </Link>
